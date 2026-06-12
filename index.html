@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ballpark Organ Soundboard</title>
+  <style>
+    :root{
+      --grass:#0f5f3b; --grass2:#073b27; --dirt:#b36b38; --cream:#fff4d7;
+      --ink:#102018; --red:#c8272d; --blue:#133d7a; --gold:#ffd166;
+      --panel:rgba(255,244,215,.94);
+    }
+    *{box-sizing:border-box} body{margin:0;min-height:100vh;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:
+      radial-gradient(circle at 50% 0%, rgba(255,255,255,.35), transparent 35%),
+      repeating-linear-gradient(90deg, var(--grass) 0 80px, var(--grass2) 80px 160px);}
+    body:before{content:"";position:fixed;inset:auto 0 0;height:34vh;background:linear-gradient(145deg,transparent 0 38%,#d79555 38% 62%,transparent 62%),linear-gradient(215deg,transparent 0 38%,#d79555 38% 62%,transparent 62%);opacity:.45;pointer-events:none}
+    main{width:min(1120px,94vw);margin:auto;padding:34px 0 60px;position:relative;z-index:1}.hero{text-align:center;color:white;text-shadow:0 3px 12px #0008;margin-bottom:22px}.badge{display:inline-block;background:var(--red);color:white;border:3px solid white;border-radius:999px;padding:7px 14px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;box-shadow:0 8px 22px #0004}.hero h1{font-size:clamp(2.4rem,8vw,5.4rem);line-height:.9;margin:18px 0 8px;letter-spacing:-.06em}.hero p{font-size:1.1rem;margin:0 auto;max-width:680px;color:#fff8}
+    .scoreboard{background:#14251c;color:#f8f2d3;border:8px solid #273a31;border-radius:26px;padding:18px;box-shadow:0 20px 60px #0008;margin:24px 0}.now{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}.lights{display:flex;gap:8px}.light{width:18px;height:18px;border-radius:50%;background:#31443a;box-shadow:inset 0 2px 4px #0008}.playing .light{background:var(--gold);box-shadow:0 0 16px var(--gold)}#nowPlaying{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;text-transform:uppercase;letter-spacing:.08em}.stop{border:0;border-radius:16px;background:var(--red);color:white;font-size:1.2rem;font-weight:950;padding:14px 22px;cursor:pointer;box-shadow:0 8px 0 #7c1519}.stop:active{transform:translateY(5px);box-shadow:0 3px 0 #7c1519}.section-title{color:white;text-shadow:0 2px 8px #0008;margin:28px 0 12px;font-size:1.4rem}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px}.pad{border:4px solid #e7d5a6;background:var(--panel);border-radius:22px;padding:18px;min-height:132px;text-align:left;cursor:pointer;box-shadow:0 10px 0 #c99b62,0 22px 34px #0004;transition:.12s transform,.12s box-shadow;position:relative;overflow:hidden}.pad:before{content:"♪";position:absolute;right:14px;top:2px;font-size:4rem;color:rgba(19,61,122,.08);font-weight:900}.pad:hover{transform:translateY(-3px);box-shadow:0 13px 0 #c99b62,0 26px 36px #0005}.pad:active,.pad.active{transform:translateY(7px);box-shadow:0 3px 0 #c99b62,0 10px 24px #0004}.pad strong{display:block;font-size:1.08rem;line-height:1.1;margin-bottom:8px}.pad small{color:#536457}.tag{display:inline-block;margin-top:10px;background:#e7f0ff;color:var(--blue);border-radius:999px;padding:4px 8px;font-weight:800;font-size:.72rem}.footer{margin-top:28px;background:rgba(255,255,255,.82);border-radius:20px;padding:14px 16px;color:#334}.volume{display:flex;align-items:center;gap:12px}.volume input{accent-color:var(--red);width:180px}@media(max-width:620px){.now{display:block}.stop{width:100%;margin-top:14px}.grid{grid-template-columns:1fr 1fr}.pad{min-height:150px;padding:14px}.hero h1{font-size:3.1rem}}
+  </style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <span class="badge">Press box approved</span>
+    <h1>Ballpark Organ</h1>
+    <p>A tiny browser soundboard for walk-ups, rallies, heckles, and deeply unserious baseball moments.</p>
+  </section>
+  <section class="scoreboard" id="scoreboard">
+    <div class="now">
+      <div><div class="lights"><span class="light"></span><span class="light"></span><span class="light"></span></div><h2 id="nowPlaying">Ready in the booth</h2></div>
+      <div class="volume"><label for="volume">Volume</label><input id="volume" type="range" min="0" max="1" step=".01" value=".7"></div>
+      <button class="stop" id="stopBtn">■ STOP</button>
+    </div>
+  </section>
+  <h2 class="section-title">Traditional ballpark bits</h2>
+  <section class="grid" id="traditional"></section>
+  <h2 class="section-title">Classic public-domain tunes</h2>
+  <section class="grid" id="classics"></section>
+  <p class="footer">No audio files needed. Everything is synthesized in your browser with a cheesy little organ patch, which is legally safer and spiritually correct.</p>
+</main>
+<script>
+const songs = [
+  {cat:'traditional', name:'Charge!', desc:'The classic da-da-da-DUH rally sting.', tag:'rally', tempo:150, notes:['G4','C5','E5','G5','E5','G5'], beats:[.5,.5,.5,.9,.25,1.2]},
+  {cat:'traditional', name:'Shave and a Haircut', desc:'For foul balls, bad calls, and comic timing.', tag:'rimshot energy', tempo:135, notes:['C5','G4','G4','A4','G4',null,'B4','C5'], beats:[.5,.25,.25,.5,.5,.35,.5,.9]},
+  {cat:'traditional', name:'Let’s Go Team', desc:'Simple chant bed. Crowd supplies the yelling.', tag:'chant', tempo:120, notes:['C4','E4','G4','G4','A4','G4','E4','C4'], beats:[.5,.5,.5,.5,.5,.5,.5,1]},
+  {cat:'traditional', name:'Strikeout Sting', desc:'Short minor-key drama for strike three.', tag:'sting', tempo:150, notes:['E5','Eb5','D5','C5','G4','C5'], beats:[.25,.25,.25,.45,.25,.9]},
+  {cat:'traditional', name:'Safe!', desc:'Bright little ta-da for close plays.', tag:'celebrate', tempo:145, notes:['C5','E5','G5','C6'], beats:[.25,.25,.25,1]},
+  {cat:'traditional', name:'Uh Oh...', desc:'Descending organ sadness.', tag:'goof', tempo:105, notes:['C5','B4','Bb4','A4','Ab4','G4'], beats:[.35,.35,.35,.35,.35,1]},
+  {cat:'traditional', name:'Walk-Up Swagger', desc:'A bluesy loop for the batter box.', tag:'loop-ish', tempo:118, notes:['C4','Eb4','F4','Gb4','G4','Bb4','G4','F4','Eb4','C4'], beats:[.35,.35,.35,.35,.7,.35,.35,.35,.35,.9]},
+  {cat:'traditional', name:'Seventh Inning Wiggle', desc:'A little waltzy organ filler.', tag:'filler', tempo:100, notes:['C4','E4','G4','C5','G4','E4','D4','F4','A4','D5','A4','F4'], beats:[.5,.5,.5,.5,.5,.5,.5,.5,.5,.5,.5,1]},
+  {cat:'classics', name:'Take Me Out to the Ball Game', desc:'The essential ballpark chorus.', tag:'1908 classic', tempo:118, notes:['C4','C5','A4','G4','E4','G4','D4',null,'C4','C5','A4','G4','E4','G4','D4',null,'E4','F4','F#4','G4','A4','G4','E4','D4','C4'], beats:[.5,.5,.5,.5,.5,.5,1,.4,.5,.5,.5,.5,.5,.5,1,.4,.35,.35,.35,.5,.5,.5,.5,.5,1.2]},
+  {cat:'classics', name:'When the Saints', desc:'Brassy, happy, impossible not to grin.', tag:'public domain', tempo:112, notes:['C4','E4','F4','G4',null,'C4','E4','F4','G4',null,'C4','E4','F4','G4','E4','C4','E4','D4'], beats:[.5,.5,.5,1,.3,.5,.5,.5,1,.3,.5,.5,.5,.7,.5,.5,.5,1]},
+  {cat:'classics', name:'Camptown Races', desc:'Old-timey sprint around the bases.', tag:'public domain', tempo:150, notes:['G4','G4','E4','G4','A4','G4','E4','D4','C4','D4','E4','C4','D4','D4'], beats:[.35,.35,.35,.35,.35,.35,.35,.35,.5,.5,.5,.5,.5,1]},
+  {cat:'classics', name:'The Entertainer', desc:'Ragtime concession-stand chaos.', tag:'public domain', tempo:132, notes:['D4','D#4','E4','C5','E4','C5','E4','C5','C5','B4','A4','G4','A4','B4'], beats:[.25,.25,.25,.5,.25,.5,.25,.5,.35,.35,.35,.35,.35,1]},
+  {cat:'classics', name:'Mexican Hat Dance', desc:'Mascot race fuel.', tag:'traditional', tempo:150, notes:['G4','C5','C5','C5','D5','E5','E5','E5','F5','E5','D5','C5','B4','C5'], beats:[.35,.35,.35,.35,.35,.35,.35,.35,.35,.35,.35,.35,.35,1]},
+  {cat:'classics', name:'Yankee Doodle', desc:'Patriotic baseball-adjacent silliness.', tag:'public domain', tempo:130, notes:['C4','C4','D4','E4','C4','E4','D4','G3','C4','C4','D4','E4','C4','B3'], beats:[.45,.45,.45,.45,.45,.45,.75,.45,.45,.45,.45,.45,.45,1]},
+  {cat:'classics', name:'Pop Goes the Weasel', desc:'For pitching changes and other nonsense.', tag:'public domain', tempo:136, notes:['C4','C4','D4','D4','E4','G4','E4','C4','C4','C4','D4','D4','E4','C4'], beats:[.4,.4,.4,.4,.4,.4,.4,.4,.4,.4,.4,.4,.4,1]},
+  {cat:'classics', name:'Habanera-ish Vamp', desc:'Not quite Bizet, but ballpark spooky.', tag:'dramatic', tempo:110, notes:['D4','C#4','C4','B3','A#3','A3','G4','F4','E4','D4'], beats:[.5,.5,.5,.5,.5,.5,.5,.5,.5,1]}
+];
+let ctx, master, current=[], activeButton=null;
+const noteHz=n=>{if(!n)return null; const m=n.match(/^([A-G])(#|b)?(\d)$/); const semis={C:0,D:2,E:4,F:5,G:7,A:9,B:11}; let v=semis[m[1]]+(m[2]=='#'?1:m[2]=='b'?-1:0); let midi=(+m[3]+1)*12+v; return 440*Math.pow(2,(midi-69)/12)};
+function setup(){ if(ctx) return; ctx=new (window.AudioContext||window.webkitAudioContext)(); master=ctx.createGain(); master.gain.value=document.getElementById('volume').value; master.connect(ctx.destination)}
+function stop(){ current.forEach(n=>{try{n.stop()}catch(e){}}); current=[]; document.getElementById('scoreboard').classList.remove('playing'); document.getElementById('nowPlaying').textContent='Ready in the booth'; if(activeButton) activeButton.classList.remove('active'); activeButton=null; }
+function play(song, btn){ setup(); stop(); activeButton=btn; btn.classList.add('active'); document.getElementById('scoreboard').classList.add('playing'); document.getElementById('nowPlaying').textContent='Now playing: '+song.name; let t=ctx.currentTime+.04; const beat=60/song.tempo; song.notes.forEach((note,i)=>{ const dur=(song.beats[i]||.5)*beat; const hz=noteHz(note); if(hz){ [1,.5,2].forEach((mult,idx)=>{ const osc=ctx.createOscillator(), gain=ctx.createGain(); osc.type=idx===1?'triangle':'square'; osc.frequency.value=hz*mult; gain.gain.setValueAtTime(0,t); gain.gain.linearRampToValueAtTime((idx===1?.075:.045)*master.gain.value,t+.025); gain.gain.exponentialRampToValueAtTime(.0001,t+dur*.92); osc.connect(gain); gain.connect(master); osc.start(t); osc.stop(t+dur); current.push(osc); }); } t+=dur; }); setTimeout(()=>{ if(activeButton===btn) stop(); }, Math.max(200,(t-ctx.currentTime)*1000+100)); }
+function makePad(song){ const b=document.createElement('button'); b.className='pad'; b.innerHTML=`<strong>${song.name}</strong><small>${song.desc}</small><span class="tag">${song.tag}</span>`; b.onclick=()=>play(song,b); return b; }
+songs.forEach(s=>document.getElementById(s.cat).appendChild(makePad(s)));
+document.getElementById('stopBtn').onclick=stop; document.getElementById('volume').oninput=e=>{ if(master) master.gain.value=e.target.value; };
+</script>
+</body>
+</html>
