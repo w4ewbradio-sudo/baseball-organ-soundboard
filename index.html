@@ -32,14 +32,21 @@
       <button class="stop" id="stopBtn">■ STOP</button>
     </div>
   </section>
-  <h2 class="section-title">Traditional ballpark bits</h2>
+  <h2 class="section-title">Real safe-to-use samples</h2>
+  <section class="grid" id="real"></section>
+  <h2 class="section-title">Generated organ bits</h2>
   <section class="grid" id="traditional"></section>
   <h2 class="section-title">Classic public-domain tunes</h2>
   <section class="grid" id="classics"></section>
-  <p class="footer">Now using real generated WAV samples, custom-made for this board from public-domain/traditional melodies. Cheesy organ remains spiritually mandatory.</p>
+  <p class="footer">Top row uses verified Freesound CC0/CC-BY samples with attribution in the repo. The rest are custom generated organ WAVs from public-domain/traditional melodies.</p>
 </main>
 <script>
 const songs = [
+  {cat:'real', name:'Real Baseball Organ', desc:'CC0 Freesound organ clip by treblebooster.', tag:'CC0', src:'samples/freesound/real-baseball-organ.mp3'},
+  {cat:'real', name:'Real Cavalry Short', desc:'CC0 baseball cavalry sting by vckhaze.', tag:'CC0', src:'samples/freesound/real-cavalry-short.mp3'},
+  {cat:'real', name:'Real Cavalry Long', desc:'CC0 baseball cavalry sting by vckhaze.', tag:'CC0', src:'samples/freesound/real-cavalry-long.mp3'},
+  {cat:'real', name:'Real Play Ball', desc:'CC-BY old-time play ball organ by CGEffex.', tag:'CC BY', src:'samples/freesound/real-play-ball.mp3'},
+  {cat:'real', name:'Real Charge + Crowd', desc:'CC-BY stadium organ/crowd recording by AshFox.', tag:'CC BY', src:'samples/freesound/real-charge-crowd.mp3'},
   {cat:'traditional', name:'Charge!', desc:'The classic da-da-da-DUH rally sting.', tag:'rally', src:'samples/charge.wav'},
   {cat:'traditional', name:'Shave and a Haircut', desc:'For foul balls, bad calls, and comic timing.', tag:'rimshot energy', src:'samples/shave-and-a-haircut.wav'},
   {cat:'traditional', name:'Let’s Go Team', desc:'Simple chant bed. Crowd supplies the yelling.', tag:'chant', src:'samples/lets-go-team.wav'},
