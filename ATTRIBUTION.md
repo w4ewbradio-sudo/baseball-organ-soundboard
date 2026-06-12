@@ -9,3 +9,7 @@ This project uses generated organ WAV files plus these Freesound samples. CC-BY 
 - **Real Charge + Crowd**: "WALLA_Ballpark Organ Cheering Charge" by AshFox, CC BY. https://freesound.org/people/AshFox/sounds/191928/
 
 Researched but not bundled: CC-BY-NC samples, because noncommercial restrictions are ambiguous for a public web project; and several Freesound preview files that returned 403 from the CDN during download testing.
+
+## Generated-extra sample pack
+
+The William Tell Dash, Here We Go, Rally Clap, Suspense Build, Victory Flourish, Error Sad, Batter Up Blues, Crowd Cheer, Crowd Boo, Bat Crack, and Ump Strike samples are generated locally by `generate_extra_samples.py`. No third-party recording is used. Public-domain/traditional motifs only where melodic material is recognizable.
