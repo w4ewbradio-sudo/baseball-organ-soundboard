@@ -17,6 +17,21 @@ or a public-domain melody rendered through the FluidR3_GM soundfont.
 - **Drawbar Organ C Chord** by Shadowcelibi, Public Domain. https://commons.wikimedia.org/wiki/File:Drawbar_C_Chord.ogg
 - **Hammond Organ - Model A Medley** by Nathaniel C. Wilcox (Organgrinder010), CC BY 3.0. https://commons.wikimedia.org/wiki/File:Hammond_Organ_-_Model_A_Medley.ogg
 
+## Eric's stadium organ pack (samples/user-stadium-organ/)
+
+Eric provided `Stadium Organ Music.zip` from Google Drive. The public page includes only public-domain/traditional-safe titles from that pack:
+
+- Yankee Doodle
+- Drunken Sailor
+- Tarantella
+- Yellow Rose of Texas
+- Alouette
+- Irish Washerwoman
+- Korobeiniki
+- Anchors Aweigh
+
+Modern copyrighted riffs from the pack were intentionally not bundled on the public GitHub Pages site unless/until Eric confirms a private-use distribution plan or rights coverage.
+
 ## Rendered tunes (samples/tunes/)
 
 Public-domain/traditional melodies written as MIDI (sources in `midi/`) and rendered
