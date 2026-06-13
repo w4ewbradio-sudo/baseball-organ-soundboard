@@ -32,15 +32,11 @@
       <button class="stop" id="stopBtn">■ STOP</button>
     </div>
   </section>
-  <h2 class="section-title">Real safe-to-use samples</h2>
+  <h2 class="section-title">Real organ recordings</h2>
   <section class="grid" id="real"></section>
-  <h2 class="section-title">Generated organ bits</h2>
-  <section class="grid" id="traditional"></section>
-  <h2 class="section-title">Safe homemade effects</h2>
-  <section class="grid" id="effects"></section>
-  <h2 class="section-title">Classic public-domain tunes</h2>
-  <section class="grid" id="classics"></section>
-  <p class="footer">Top row uses verified Freesound/Wikimedia CC0/CC-BY samples with attribution in the repo. The rest are real audio files generated locally from public-domain/traditional motifs and homemade effects.</p>
+  <h2 class="section-title">Classic tunes (sampled organ)</h2>
+  <section class="grid" id="tunes"></section>
+  <p class="footer">Real organ recordings are verified CC0/CC-BY samples from Freesound and Wikimedia Commons. Classic tunes are public-domain melodies rendered through a real Hammond organ soundfont. Full attribution in the repo.</p>
 </main>
 <script>
 const songs = [
@@ -48,38 +44,21 @@ const songs = [
   {cat:'real', name:'Real Cavalry Short', desc:'CC0 baseball cavalry sting by vckhaze.', tag:'CC0', src:'samples/freesound/real-cavalry-short.mp3'},
   {cat:'real', name:'Real Cavalry Long', desc:'CC0 baseball cavalry sting by vckhaze.', tag:'CC0', src:'samples/freesound/real-cavalry-long.mp3'},
   {cat:'real', name:'Real Play Ball', desc:'CC-BY old-time play ball organ by CGEffex.', tag:'CC BY', src:'samples/freesound/real-play-ball.mp3'},
-  {cat:'real', name:'Real Charge + Crowd', desc:'CC-BY stadium organ/crowd recording by AshFox.', tag:'CC BY', src:'samples/freesound/real-charge-crowd.mp3'},
-  {cat:'real', name:'Real Metal Bat', desc:'CC0 metal-bat hit from Wikimedia Commons.', tag:'CC0', src:'samples/wikimedia-real/real-metal-bat.mp3'},
-  {cat:'real', name:'Real Crowd + Horns', desc:'CC-BY sports crowd with applause and air horns.', tag:'CC BY', src:'samples/wikimedia-real/real-race-crowd-air-horns.mp3'},
-  {cat:'real', name:'Real Stadium Crowd', desc:'CC-BY stadium crowd ambience from Wikimedia Commons.', tag:'CC BY', src:'samples/wikimedia-real/real-stadium-crowd.mp3'},
+  {cat:'real', name:'Hammond Leslie Sweep', desc:'Public-domain Hammond through a Leslie cabinet, slow-fast-slow.', tag:'PD', src:'samples/real/hammond-leslie-slow-fast-slow.ogg'},
+  {cat:'real', name:'Hammond Leslie Sequence', desc:'Public-domain Hammond/Leslie speaker sequence.', tag:'PD', src:'samples/real/hammond-leslie-sequence.ogg'},
+  {cat:'real', name:'Drawbar Organ Chord', desc:'Public-domain drawbar organ C-chord sting.', tag:'PD', src:'samples/real/drawbar-organ-c-chord.ogg'},
+  {cat:'real', name:'Hammond Model A Medley', desc:'CC-BY 1935 Hammond Model A performance by Nathaniel C. Wilcox.', tag:'CC BY', src:'samples/real/hammond-model-a-medley.ogg'},
 
-  {cat:'traditional', name:'William Tell Dash', desc:'Public-domain chase energy, organ-style.', tag:'generated', src:'samples/generated-extra/organ-william-tell.wav'},
-  {cat:'traditional', name:'Here We Go', desc:'Simple rally phrase for a crowd chant.', tag:'generated', src:'samples/generated-extra/organ-here-we-go.wav'},
-  {cat:'traditional', name:'Rally Clap', desc:'Short rhythmic organ clap cue.', tag:'generated', src:'samples/generated-extra/organ-rally-clap.wav'},
-  {cat:'traditional', name:'Suspense Build', desc:'Chromatic tension for full-count drama.', tag:'generated', src:'samples/generated-extra/organ-suspense.wav'},
-  {cat:'traditional', name:'Victory Flourish', desc:'Tiny organ celebration.', tag:'generated', src:'samples/generated-extra/organ-victory.wav'},
-  {cat:'traditional', name:'Error Sad Trombone-ish', desc:'Downward organ disappointment.', tag:'generated', src:'samples/generated-extra/organ-error-sad.wav'},
-  {cat:'traditional', name:'Batter Up Blues', desc:'Bluesy safe walk-up lick.', tag:'generated', src:'samples/generated-extra/organ-batter-up.wav'},
-  {cat:'effects', name:'Safe Crowd Cheer', desc:'Homemade synthetic crowd cheer.', tag:'generated', src:'samples/generated-extra/crowd-cheer-safe.wav'},
-  {cat:'effects', name:'Safe Crowd Boo', desc:'Homemade synthetic boo crowd.', tag:'generated', src:'samples/generated-extra/crowd-boo-safe.wav'},
-  {cat:'effects', name:'Safe Bat Crack', desc:'Homemade synthetic bat hit.', tag:'generated', src:'samples/generated-extra/bat-crack-safe.wav'},
-  {cat:'effects', name:'Ump Strike!', desc:'Homemade ump-style vocal-ish sting.', tag:'generated', src:'samples/generated-extra/ump-strike-safe.wav'},
-  {cat:'traditional', name:'Charge!', desc:'The classic da-da-da-DUH rally sting.', tag:'rally', src:'samples/charge.wav'},
-  {cat:'traditional', name:'Shave and a Haircut', desc:'For foul balls, bad calls, and comic timing.', tag:'rimshot energy', src:'samples/shave-and-a-haircut.wav'},
-  {cat:'traditional', name:'Let’s Go Team', desc:'Simple chant bed. Crowd supplies the yelling.', tag:'chant', src:'samples/lets-go-team.wav'},
-  {cat:'traditional', name:'Strikeout Sting', desc:'Short minor-key drama for strike three.', tag:'sting', src:'samples/strikeout-sting.wav'},
-  {cat:'traditional', name:'Safe!', desc:'Bright little ta-da for close plays.', tag:'celebrate', src:'samples/safe.wav'},
-  {cat:'traditional', name:'Uh Oh...', desc:'Descending organ sadness.', tag:'goof', src:'samples/uh-oh.wav'},
-  {cat:'traditional', name:'Walk-Up Swagger', desc:'A bluesy loop for the batter box.', tag:'sample', src:'samples/walk-up-swagger.wav'},
-  {cat:'traditional', name:'Seventh Inning Wiggle', desc:'A little waltzy organ filler.', tag:'sample', src:'samples/seventh-inning-wiggle.wav'},
-  {cat:'classics', name:'Take Me Out to the Ball Game', desc:'The essential ballpark chorus.', tag:'1908 classic', src:'samples/take-me-out.wav'},
-  {cat:'classics', name:'When the Saints', desc:'Brassy, happy, impossible not to grin.', tag:'public domain', src:'samples/when-the-saints.wav'},
-  {cat:'classics', name:'Camptown Races', desc:'Old-timey sprint around the bases.', tag:'public domain', src:'samples/camptown-races.wav'},
-  {cat:'classics', name:'The Entertainer', desc:'Ragtime concession-stand chaos.', tag:'public domain', src:'samples/the-entertainer.wav'},
-  {cat:'classics', name:'Mexican Hat Dance', desc:'Mascot race fuel.', tag:'traditional', src:'samples/mexican-hat-dance.wav'},
-  {cat:'classics', name:'Yankee Doodle', desc:'Patriotic baseball-adjacent silliness.', tag:'public domain', src:'samples/yankee-doodle.wav'},
-  {cat:'classics', name:'Pop Goes the Weasel', desc:'For pitching changes and other nonsense.', tag:'public domain', src:'samples/pop-goes-the-weasel.wav'},
-  {cat:'classics', name:'Habanera-ish Vamp', desc:'Not quite Bizet, but ballpark spooky.', tag:'dramatic', src:'samples/habanera-vamp.wav'}
+  {cat:'tunes', name:'Charge!', desc:'The classic da-da-da-DUH rally fanfare.', tag:'organ', src:'samples/tunes/charge.wav'},
+  {cat:'tunes', name:'Take Me Out to the Ball Game', desc:'The essential ballpark chorus.', tag:'1908 classic', src:'samples/tunes/take-me-out.wav'},
+  {cat:'tunes', name:'When the Saints', desc:'Brassy, happy, impossible not to grin.', tag:'public domain', src:'samples/tunes/saints.wav'},
+  {cat:'tunes', name:'Camptown Races', desc:'Old-timey sprint around the bases.', tag:'public domain', src:'samples/tunes/camptown.wav'},
+  {cat:'tunes', name:'The Entertainer', desc:'Ragtime concession-stand chaos.', tag:'public domain', src:'samples/tunes/entertainer.wav'},
+  {cat:'tunes', name:'Mexican Hat Dance', desc:'Mascot race fuel.', tag:'traditional', src:'samples/tunes/mexican-hat.wav'},
+  {cat:'tunes', name:'Yankee Doodle', desc:'Patriotic baseball-adjacent silliness.', tag:'public domain', src:'samples/tunes/yankee-doodle.wav'},
+  {cat:'tunes', name:'Pop Goes the Weasel', desc:'For pitching changes and other nonsense.', tag:'public domain', src:'samples/tunes/pop-weasel.wav'},
+  {cat:'tunes', name:'Shave and a Haircut', desc:'For foul balls, bad calls, and comic timing.', tag:'rimshot energy', src:'samples/tunes/shave-haircut.wav'},
+  {cat:'tunes', name:'Habanera Vamp', desc:'Not quite Bizet, but ballpark spooky.', tag:'dramatic', src:'samples/tunes/habanera-vamp.wav'}
 ];
 let currentAudio=null, activeButton=null;
 function stop(){
