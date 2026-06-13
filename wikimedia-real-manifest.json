@@ -1,0 +1,41 @@
+[
+  {
+    "slug": "real-metal-bat",
+    "title": "Fake Metal Bat",
+    "button": "Real Metal Bat",
+    "creator": "Shawn Eary",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=157421110",
+    "start": 0,
+    "duration": 0.48,
+    "desc": "CC0 real metal-bat hit from Wikimedia Commons.",
+    "file": "samples/wikimedia-real/real-metal-bat.mp3"
+  },
+  {
+    "slug": "real-race-crowd-air-horns",
+    "title": "F1-Race-Crowd-Applause-Air-Horns",
+    "button": "Real Crowd + Horns",
+    "creator": "WebbFilmsUK",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=166556390",
+    "start": 0,
+    "duration": 8,
+    "desc": "CC-BY real sports crowd with applause and air horns.",
+    "file": "samples/wikimedia-real/real-race-crowd-air-horns.mp3"
+  },
+  {
+    "slug": "real-stadium-crowd",
+    "title": "WWS FootballAustriavs.Sweden",
+    "button": "Real Stadium Crowd",
+    "creator": "Work With Sounds / Torsten Nilsson",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=38096966",
+    "start": 22,
+    "duration": 8,
+    "desc": "CC-BY real stadium crowd ambience from Wikimedia Commons.",
+    "file": "samples/wikimedia-real/real-stadium-crowd.mp3"
+  }
+]
