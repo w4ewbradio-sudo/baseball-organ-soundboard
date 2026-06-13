@@ -1,5 +1,6 @@
 // tunes.js — melody data for sampled-organ renditions of public-domain tunes.
 // Pitches: scientific notation. Durations: midi-writer-js codes.
+// Optional third element on a note = rest BEFORE the note (same duration codes).
 module.exports = [
   {
     file: 'charge', name: 'Charge!', tempo: 160,

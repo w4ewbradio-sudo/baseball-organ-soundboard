@@ -42,8 +42,8 @@ for (const tune of tunes) {
   const melody = buildTrack(tune.melody, 90);
   melody.setTempo(tune.tempo);
   const chords = buildTrack(tune.chords, 55);
-  const midiPath = path.join('midi', `${tune.file}.mid`);
-  const wavPath = path.join('samples', 'tunes', `${tune.file}.wav`);
+  const midiPath = path.join(__dirname, 'midi', `${tune.file}.mid`);
+  const wavPath = path.join(__dirname, 'samples', 'tunes', `${tune.file}.wav`);
   fs.writeFileSync(midiPath, Buffer.from(new MidiWriter.Writer([melody, chords]).buildFile()));
   execFileSync(fluidsynth, ['-ni', '-g', '0.8', '-F', wavPath, '-r', '44100', SOUNDFONT, midiPath]);
   const kb = Math.round(fs.statSync(wavPath).size / 1024);
