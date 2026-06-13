@@ -30,6 +30,14 @@ Eric provided `Stadium Organ Music.zip` from Google Drive. The public page inclu
 - Korobeiniki
 - Anchors Aweigh
 
+Eric also provided five standalone WAV attachments, normalized/transcoded for the board as:
+
+- Down-Up Sting
+- Big Chord
+- Italian Organ
+- Hat Dance
+- Da-Da-Da Up
+
 Modern copyrighted riffs from the pack were intentionally not bundled on the public GitHub Pages site unless/until Eric confirms a private-use distribution plan or rights coverage.
 
 ## Rendered tunes (samples/tunes/)
