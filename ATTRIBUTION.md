@@ -1,23 +1,25 @@
 # Sample Attributions
 
-This project uses generated organ WAV files plus these real CC0/CC-BY samples. CC-BY samples require attribution; CC0 samples are credited anyway.
+All audio on this board is either a verified CC0/CC-BY recording (credited below)
+or a public-domain melody rendered through the FluidR3_GM soundfont.
 
-## Freesound
+## Freesound (samples/freesound/)
 
 - **Real Baseball Organ**: "baseball organ" by treblebooster, CC0. https://freesound.org/people/treblebooster/sounds/151373/
 - **Real Cavalry Short**: "Baseball cavalry sting short sustain.wav" by vckhaze, CC0. https://freesound.org/people/vckhaze/sounds/380695/
 - **Real Cavalry Long**: "Baseball calvary sting long sustain.wav" by vckhaze, CC0. https://freesound.org/people/vckhaze/sounds/380696/
 - **Real Play Ball**: "Play Ball!.wav" by CGEffex, CC BY. https://freesound.org/people/CGEffex/sounds/101137/
-- **Real Charge + Crowd**: "WALLA_Ballpark Organ Cheering Charge" by AshFox, CC BY. https://freesound.org/people/AshFox/sounds/191928/
 
-## Wikimedia Commons / Openverse
+## Additional real recordings (samples/real/)
 
-- **Real Metal Bat**: "Fake Metal Bat" by Shawn Eary, CC0 1.0. https://commons.wikimedia.org/w/index.php?curid=157421110
-- **Real Crowd + Horns**: "F1-Race-Crowd-Applause-Air-Horns" by WebbFilmsUK, CC BY 4.0. https://commons.wikimedia.org/w/index.php?curid=166556390
-- **Real Stadium Crowd**: "WWS FootballAustriavs.Sweden" by Work With Sounds / Torsten Nilsson, CC BY 4.0. https://commons.wikimedia.org/w/index.php?curid=38096966
+- **Leslie Cabinet Slow-Fast-Slow** by Wikipedia user wikipedia-ce, Public Domain. https://commons.wikimedia.org/wiki/File:LeslieCabinetSlowFastSlow.ogg
+- **Leslie Cabinet Sequence** by Wikipedia user wikipedia-ce, Public Domain. https://commons.wikimedia.org/wiki/File:LezlieCabinetSequence.ogg
+- **Drawbar Organ C Chord** by Shadowcelibi, Public Domain. https://commons.wikimedia.org/wiki/File:Drawbar_C_Chord.ogg
+- **Hammond Organ - Model A Medley** by Nathaniel C. Wilcox (Organgrinder010), CC BY 3.0. https://commons.wikimedia.org/wiki/File:Hammond_Organ_-_Model_A_Medley.ogg
 
-Researched but not bundled: CC-BY-NC samples, because noncommercial restrictions are ambiguous for a public web project; and several Freesound preview files that returned 403 from the CDN during download testing.
+## Rendered tunes (samples/tunes/)
 
-## Generated-extra sample pack
-
-The William Tell Dash, Here We Go, Rally Clap, Suspense Build, Victory Flourish, Error Sad, Batter Up Blues, Crowd Cheer, Crowd Boo, Bat Crack, and Ump Strike samples are generated locally by `generate_extra_samples.py`. No third-party recording is used. Public-domain/traditional motifs only where melodic material is recognizable.
+Public-domain/traditional melodies written as MIDI (sources in `midi/`) and rendered
+with FluidSynth through the **FluidR3_GM** soundfont by Frank Wen (MIT license).
+The Habanera Vamp is an original phrase. Re-render with `npm run render`
+(requires fluidsynth and tools/FluidR3_GM.sf2 — see docs/superpowers/plans/2026-06-13-organ-revamp.md Task 2).
