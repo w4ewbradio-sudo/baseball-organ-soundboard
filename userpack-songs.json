@@ -1,0 +1,499 @@
+[
+  {
+    "cat": "userpack",
+    "name": "Addams Family",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-addams-family.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Africa",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-africa.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Alouette",
+    "desc": "User-provided stadium organ recording.",
+    "tag": "traditional",
+    "src": "samples/user-stadium-organ/pack-alouette.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Anchors Aweigh",
+    "desc": "User-provided stadium organ recording.",
+    "tag": "traditional",
+    "src": "samples/user-stadium-organ/pack-anchors-aweigh.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Back in Black",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-back-in-black.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Ballroom Blitz",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-ballroom-blitz.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Batman",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-batman.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Beer Barrel Polka",
+    "desc": "User-provided stadium organ recording.",
+    "tag": "traditional",
+    "src": "samples/user-stadium-organ/pack-beer-barrel-polka.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Big Chord",
+    "desc": "User-provided stadium organ WAV, normalized for the board.",
+    "tag": "attached",
+    "src": "samples/user-stadium-organ/user-big-chord.mp3"
+  },
+  {
+    "cat": "userpack",
+    "name": "Buddy Holly",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-buddy-holly.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "China Grove",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-china-grove.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Da-Da-Da Up",
+    "desc": "User-provided stadium organ WAV, normalized for the board.",
+    "tag": "attached",
+    "src": "samples/user-stadium-organ/user-da-da-da-up.mp3"
+  },
+  {
+    "cat": "userpack",
+    "name": "Danger Zone",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-danger-zone.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Down Under",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-down-under.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Down-Up Sting",
+    "desc": "User-provided stadium organ WAV, normalized for the board.",
+    "tag": "attached",
+    "src": "samples/user-stadium-organ/user-down-up-sting.mp3"
+  },
+  {
+    "cat": "userpack",
+    "name": "Drunken Sailor",
+    "desc": "User-provided stadium organ recording.",
+    "tag": "traditional",
+    "src": "samples/user-stadium-organ/pack-drunken-sailor.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Dueling Banjos",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-dueling-banjos.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Enter Sandman",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-enter-sandman.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Feels So Good",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-feels-so-good.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Final Countdown",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-final-countdown.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Get Ready for This",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-get-ready-for-this.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Girl U Want",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-girl-u-want.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Godzilla",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-godzilla.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Grapevine",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-grapevine.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Hat Dance",
+    "desc": "User-provided stadium organ WAV, normalized for the board.",
+    "tag": "attached",
+    "src": "samples/user-stadium-organ/user-hat-dance.mp3"
+  },
+  {
+    "cat": "userpack",
+    "name": "Hey Jude",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-hey-jude.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Imperial March",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-imperial-march.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Irish Washerwoman",
+    "desc": "User-provided stadium organ recording.",
+    "tag": "traditional",
+    "src": "samples/user-stadium-organ/pack-irish-washerwoman.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Italian Organ",
+    "desc": "User-provided stadium organ WAV, normalized for the board.",
+    "tag": "attached",
+    "src": "samples/user-stadium-organ/user-italian-organ.mp3"
+  },
+  {
+    "cat": "userpack",
+    "name": "It\u2019s Not Unusual",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-its-not-unusual.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "I\u2019m Blue",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-im-blue.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "James Bond",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-james-bond.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Jump",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-jump.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Kernkraft 400",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-kernkraft-400.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Killing in the Name",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-killing-in-the-name.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "King of the Hill",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-king-of-the-hill.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Knights of Cydonia",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-knights-of-cydonia.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Korobeiniki",
+    "desc": "User-provided stadium organ recording.",
+    "tag": "traditional",
+    "src": "samples/user-stadium-organ/pack-korobeiniki.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "La Grange",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-la-grange.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Let\u2019s Go",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-lets-go.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Let\u2019s Go Crazy",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-lets-go-crazy.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Livin\u2019 on a Prayer",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-livin-on-a-prayer.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Master of Puppets",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-master-of-puppets.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Money for Nothing",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-money-for-nothing.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Mr. Blue Sky",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-mr-blue-sky.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Muppet Show",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-muppet-show.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "My Sharona",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-my-sharona.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Na Na Hey Hey",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-na-na-hey-hey.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Oye Como Va",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-oye-como-va.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Rhythm Is Gonna Get You",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-rhythm-is-gonna-get-you.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Seven Nation Army",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-seven-nation-army.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "She Drives Me Crazy",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-she-drives-me-crazy.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Smoke on the Water",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-smoke-on-the-water.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Spanish Flea",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-spanish-flea.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Start Me Up",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-start-me-up.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Sweet Caroline",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-sweet-caroline.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Tarantella",
+    "desc": "User-provided stadium organ recording.",
+    "tag": "traditional",
+    "src": "samples/user-stadium-organ/pack-tarantella.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Tequila",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-tequila.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "The Hustle",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-the-hustle.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "The Thing That Should Not Be",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-the-thing-that-should-not-be.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Tom Sawyer",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-tom-sawyer.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Twilight Zone",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-twilight-zone.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Vengabus",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-vengabus.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Walk This Way",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-walk-this-way.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "War Pigs",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-war-pigs.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "What Is Love",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-what-is-love.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Wild Thing",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-wild-thing.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Working Man",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-working-man.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Yankee Doodle",
+    "desc": "User-provided stadium organ recording.",
+    "tag": "traditional",
+    "src": "samples/user-stadium-organ/pack-yankee-doodle.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Yellow Rose of Texas",
+    "desc": "User-provided stadium organ recording.",
+    "tag": "traditional",
+    "src": "samples/user-stadium-organ/pack-yellow-rose-of-texas.ogg"
+  },
+  {
+    "cat": "userpack",
+    "name": "Zoot Suit Riot",
+    "desc": "Private-use stadium organ recording from Eric\u2019s pack.",
+    "tag": "private pack",
+    "src": "samples/user-stadium-organ/pack-zoot-suit-riot.ogg"
+  }
+]

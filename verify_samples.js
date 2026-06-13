@@ -1,10 +1,12 @@
-// verify_samples.js — every src in index.html's songs array must exist on disk,
+// verify_samples.js — every sample src in index.html must exist on disk,
 // and every audio file on disk must be referenced (no orphans).
 const fs = require('fs');
 const path = require('path');
 
 const html = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8');
-const srcs = [...html.matchAll(/src:'(samples\/[^']+)'/g)].map(m => m[1]);
+const srcs = [
+  ...html.matchAll(/['"]src['"]\s*:\s*['"](samples\/[^'"]+)['"]/g)
+].map(m => m[1]);
 
 let fail = false;
 for (const src of srcs) {
